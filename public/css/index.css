@@ -203,8 +203,10 @@ section.contactMe-section {
   padding: 50px;
   box-sizing: border-box;
   position: fixed;
+  text-align: center;
   top: 80px;
   z-index: 10;
+  overflow-y: scroll;
 }
 
 .page-bg {
@@ -213,11 +215,46 @@ section.contactMe-section {
   background: white;
   padding: 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .page-bg .close {
   float: right;
 }
+
+.resume {
+  width: 80%;
+  margin: 50px 0 100px;
+}
+
+.bg-black::-webkit-scrollbar {
+  width: 7px;
+}
+
+.bg-black::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: #222;
+  border-radius: 10px;
+}
+
+.bg-black::-webkit-scrollbar-track {
+  background: #22222277;
+}
+
+.downloadBtn {
+  width: 200px;
+  height: 45px;
+  background-color: #2C45DF;
+  /* border: 3px solid #2C45DF; */
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  line-height: 45px;
+  margin: 50px 0;
+}
+
 
 /* project-section 시작 */
 .project-section h1 {
@@ -388,78 +425,28 @@ section.contactMe-section {
   background-color: #2C45DF;
 }
 
-.owl {
+.slide-wrap {
   width: 80%;
   max-width: 1200px;
+  color: #eee;
 }
 
 
 .item {
   padding: 200px 0;
+  box-sizing: border-box;
   opacity: 0.7;
   transition: .4s ease-in-out;
   transform: scale(0.9);
 }
 
-.owl .item {
+.slide-wrap .item {
   background: #222;
 }
 
-.owl-item.active {
-  border: 10px solid #2C45DF;
-}
 
 
-.active .item {
-  opacity: 1;
-  background: #fff;
-  transform: scale(1);
-}
 
-
-.owl-theme .owl-nav {
-  text-align: left;
-  margin-top: 50px;
-}
-
-.owl-theme .owl-nav [class*=owl-] {
-  display: inline-block;
-  width: 60px;
-  height: 75px;
-  background: #01D5AF;
-  text-align: center;
-  line-height: 75px;
-  cursor: pointer;
-  color: transparent;
-  border-radius: 0;
-
-}
-
-.owl-theme .owl-nav [class*=owl-prev] {
-  background-image: url(../img/pre.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center center;
-}
-
-.owl-theme .owl-nav [class*=owl-next] {
-  background-image: url(../img/next.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center center;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-  background-color: #01D5AF;
-  color: #ffF;
-}
-
-.owl-dots {
-  position: absolute;
-  left: 50%;
-  bottom: 100px;
-  transform: translateX(-50%);
-}
 
 
 
@@ -505,7 +492,7 @@ section.contactMe-section {
   height: 170px;
   border-radius: 50%;
   position: absolute;
-  right: 0;
+  left: 0;
   line-height: 150px;
   color: #fff;
   border: 10px solid #fff;

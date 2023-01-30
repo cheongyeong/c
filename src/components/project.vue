@@ -6,7 +6,7 @@
      </div>
 </div>
 
-<section class="project-section">
+<section class="project-section" id="project">
       <h1 class="bold">PROJECT</h1>
 
  <div class="project-wrap">

@@ -1,14 +1,15 @@
 <template>
    <div class="bg-black" v-if="resume == true">
        <div class="page-bg">
+        <a class="downloadBtn" href="file/resume.pdf" download>이력서 저장</a>
         <div class="close" @click="resume = false">
           <img src="img/close.png" alt="">
         </div>
-        <h1>상세페이지 입니다.</h1>
+        <img class="resume" src="img/resume.jpg">
        </div>
     </div>
 
-    <section class="profile-section">
+    <section class="profile-section" id="about">
       <div class="photo">
         <img src="img/1-1.jpg" alt="">
         <div class="profile-txt">

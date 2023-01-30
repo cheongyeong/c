@@ -12,6 +12,7 @@
     "hooper": "^0.3.4",
     "jquery": "^3.6.3",
     "vue": "^3.2.13",
+    "vue-carousel": "^0.18.0",
     "vue-owl-carousel": "^2.0.3",
     "vueperslides": "^3.5.1"
   },
