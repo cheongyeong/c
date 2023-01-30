@@ -1,14 +1,23 @@
 <template>
     <section class="contactMe-section" id="contact">
+      <ul class="city-buttons">
+  	   <li 
+       @click="selectCity"
+       :class="{ isSelected: citySelected === true }"
+       v-for="city in cities" :key="city.code">
+        {{ cities.lable }}
+       </li>
+      </ul>
+
       <h1 class="bold">CONTACT ME</h1>
       <h2>지금까지 저의 포트폴리오를 봐주셔서 감사합니다.</h2>
+
       <div class="contact-wrap">
-        <div class="mail"  @click="show = !show">
-          <Transition name="slide">
-           <span v-if="show">
+        <div class="mail"  @click="toggleOnOff">
+           <span>
              <h2 class="bold">Mail</h2>
            </span>
-          </Transition>
+           <h3  v-if="isStatusOn">cheongyeonggg@gmail.com</h3>
         </div>
         <div class="mobile">
           <span>
@@ -21,37 +30,45 @@
           </span>
         </div>
       </div>
+
     </section>
   
 </template>
 
 <script>
-
 export default {
-  data() {
-     return {
-      show: false
-  }
-  
+  name: 'city-selector',
+      data(){
+  return {
+    isStatusOn: false,
+    cities: [
+        { code: "Seoul", label: "서울", selected: false},
+        { code: "London", label: "런던", selected: false},
+        { code: "Chicago", label: "시카고", selected: false},
+      ]
+}
+},
+
+methods: {
+  selectCity(item) {
+    item.selected = !item.selected;
+  },
+
+  toggleOnOff: function() {
+    this.isStatusOn = !this.isStatusOn;
+    
+  }, 
 }
 }
+
+
+
+
 </script>
 
 <style scoped>
 
 
-.slide-enter-active {
-  transition: all 0.3s ease-out;
-}
 
-.slide-leave-active {
-  transition: all 0.8s
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  transform: translateX(200px);
-  opacity: 1;
-}
   
 </style>

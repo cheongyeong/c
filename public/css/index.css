@@ -8,6 +8,21 @@
   margin-top: 80px;
 }
 
+.city-buttons {
+  
+}
+.city-buttons li {
+  background: #555;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  cursor: pointer;
+}
+.isSelected {
+  background: orange;
+  color: #fff;
+}
+
 h1 {
   font-size: 70px;
   font-weight: 400;
@@ -116,6 +131,7 @@ section.contactMe-section {
   color: #fff;
   font-weight: bold;
   position: relative;
+  z-index: 2;
 }
 
 .intro-section .orange-circle h3 {
@@ -496,6 +512,7 @@ section.contactMe-section {
   line-height: 150px;
   color: #fff;
   border: 10px solid #fff;
+  cursor: pointer;
 }
 
 .mail span {
