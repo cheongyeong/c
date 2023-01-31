@@ -14,9 +14,9 @@
         <img src="img/1-1.jpg" alt="">
         <div class="profile-txt">
           <h3>
-            “ <span class="bold">반갑습니다.</span> 새로운 것을 끊임없이
+            “ 반갑습니다. 새로운 것을 끊임없이
             도전하여 넓은 시야를 가진 개발자가
-            되고 싶은 <span class="bold">박천경</span>입니다. ” </h3>
+            되고 싶은 박천경입니다. ” </h3>
         </div>
       </div>
       <div class="aboutMe">

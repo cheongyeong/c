@@ -1,0 +1,153 @@
+/* project-section 시작 */
+.project-section h1 {
+  margin-bottom: 50px;
+}
+
+
+
+.project-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabList-wrap {
+  width: 18%;
+}
+
+.listBtn {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tabBtn {
+  width: 35px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #eee;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contents-wrap {
+  width: 80%;
+  background-color: #eee;
+  position: relative;
+}
+
+.contents {
+  display: none;
+}
+
+.tabBtn.active {
+  background-color: #FF783E;
+}
+
+.contents.active {
+  display: block;
+}
+
+
+.antra {
+  background-image: url(../../img/pro1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+}
+
+.seoulTakju {
+  background-image: url(../../img/pro2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+}
+
+.seomun {
+  background-image: url(../../img/pro3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+}
+
+.seoulTakju .bori {
+  width: 200px;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 50px;
+  left: 135px;
+}
+
+
+
+.projectTitle {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+}
+
+.projectTitle h3 {
+  margin-bottom: 10px;
+}
+
+.more {
+  width: 140px;
+  height: 40px;
+  border: 1px solid #555;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.more:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.projectBg {
+  width: calc(100% - 160px);
+  height: 95vh;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 100px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 80px;
+  z-index: 10;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.projectBg .closeBtn {
+  position: fixed;
+  right: 150px;
+  top: 150px;
+
+}
+
+.Popup {
+  width: 100%;
+  text-align: center;
+}
+
+.Popup img {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.projectBg::-webkit-scrollbar {
+  width: 7px;
+}
+
+.projectBg::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: #222;
+  border-radius: 10px;
+}
+
+.projectBg::-webkit-scrollbar-track {
+  background: #22222277;
+}

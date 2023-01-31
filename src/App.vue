@@ -3,7 +3,6 @@
   <link rel="stylesheet" href="css/index.css" >
   <link rel="stylesheet" href="css/header.css" >
   <link rel="stylesheet" href="css/footer.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js" >
 
   
 
@@ -40,12 +39,13 @@
    <about />
    <project />
    <webClawling />
-  
+   <clawlingSlide />
    <contact />
 
   <footer>
     <div class="pcg-logoWrap">
       <div class="footer-circle">
+
         <img src="img/logo-white.png" alt="">
      </div>
     </div>
@@ -64,9 +64,7 @@ import about from './components/about.vue';
 import project from './components/project.vue';
 import webClawling from './components/webClawling.vue';
 import contact from './components/contact.vue';
-
-
-
+import clawlingSlide from './components/clawlingSlide.vue';
 
 
 
@@ -78,7 +76,7 @@ import contact from './components/contact.vue';
 export default {
   name: 'App',
   components: {
-    intro,about,project,webClawling,contact},
+    intro,about,project, webClawling, contact, clawlingSlide},
 
   methods: {
     goSection(e) {
