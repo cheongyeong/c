@@ -2,6 +2,7 @@
   <link rel="stylesheet" href="css/reset.css" >
   <link rel="stylesheet" href="css/index.css" >
   <link rel="stylesheet" href="css/header.css" >
+  <link rel="stylesheet" href="css/footer.css" >
   
 
   <div class="menu" id="menu" @click="menuShow = true">

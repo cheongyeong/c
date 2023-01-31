@@ -52,10 +52,17 @@
             <img src="img/ai.png" alt="">
           </div>
         </div>
-        <div class="resume-button" type="button" @click="resume = true">
-          이력서 확인
-          <span></span>
+
+        <div class="buttonWrap">
+           <div class="resume-button button" type="button" @click="resume = true">
+             이력서 확인
+             <span></span>
+           </div>
+           <div class="git-button button" type="button">
+             <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub 바로가기 </a>
+           </div>
         </div>
+           
 
       </div>
 

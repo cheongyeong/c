@@ -34,7 +34,7 @@
        <img class="bori" src="img/move-bori.gif" alt="">
      </div>
 
-     <div v-show="currentTab == 2" class="tab-cont">
+     <div v-show="currentTab == 2" class="tab-cont seomun" >
        <div class="projectTitle">
          <h3>project.03</h3>
          <h2>서문시장야시장<br>반응형 웹사이트 리뉴얼</h2>

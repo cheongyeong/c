@@ -1,0 +1,36 @@
+/* clawling-section 시작 */
+
+.clawling-section h1 {
+  margin-bottom: 50px;
+}
+
+.clawling-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #eee;
+  padding: 20px;
+}
+
+#vueper-slide {
+  background-color: #2C45DF;
+}
+
+.slide-wrap {
+  width: 80%;
+  max-width: 1200px;
+  color: #eee;
+}
+
+
+.item {
+  padding: 200px 0;
+  box-sizing: border-box;
+  opacity: 0.7;
+  transition: .4s ease-in-out;
+  transform: scale(0.9);
+}
+
+.slide-wrap .item {
+  background: #222;
+}

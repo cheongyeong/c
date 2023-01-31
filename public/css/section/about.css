@@ -1,0 +1,144 @@
+/* profile-section 시작 */
+
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.photo {
+  display: inline-block;
+  width: 370px;
+  height: 400px;
+  background-color: #eee;
+  position: relative;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.profile-section p {
+  margin-left: 10px;
+}
+
+.profile-txt {
+  width: 360px;
+  height: 360px;
+  text-align: center;
+  background-color: #2C45DF;
+  border-radius: 100%;
+  position: relative;
+  position: absolute;
+  right: -230px;
+  bottom: -280px;
+}
+
+.profile-txt h3 {
+  width: 80%;
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutMe {
+  width: 40%;
+}
+
+.aboutMe>div {
+  margin-bottom: 50px;
+}
+
+.skils img {
+  width: calc(20% - 30px);
+  margin: 10px;
+}
+
+.buttonWrap {
+  display: flex;
+}
+
+.button {
+  width: 200px;
+  height: 45px;
+  background-color: #E6E6E6;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.resume-button:hover {
+  background-color: #01D5AF;
+}
+
+.git-button:hover {
+  background-color: #222;
+}
+
+
+
+
+
+.bg-black {
+  width: calc(100% - 160px);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  box-sizing: border-box;
+  position: fixed;
+  text-align: center;
+  top: 80px;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.page-bg {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.page-bg .close {
+  float: right;
+}
+
+.resume {
+  width: 80%;
+  margin: 50px 0 100px;
+}
+
+.bg-black::-webkit-scrollbar {
+  width: 7px;
+}
+
+.bg-black::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: #222;
+  border-radius: 10px;
+}
+
+.bg-black::-webkit-scrollbar-track {
+  background: #22222277;
+}
+
+.downloadBtn {
+  width: 200px;
+  height: 45px;
+  background-color: #2C45DF;
+  /* border: 3px solid #2C45DF; */
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  line-height: 45px;
+  margin: 50px 0;
+}

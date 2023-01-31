@@ -7,38 +7,33 @@
 
       <div class="contact-wrap">
         <div class="mail">
-           <span class="bold mails" @click="show = !show" :class="{active:show}">
+           <span class="bold contactBtn" @click="show = !show" :class="{ active:show }">
              Mail
            </span>
              <Transition>
-              <p v-if="show">cheongyeonggg@gmail.com</p>
+              <p v-show="show"><figure class="mailIcon"></figure>cheongyeonggg@gmail.com</p>
             </Transition>
         </div>
         <div class="mobile">
-           <span class="bold mobiles" @click="show = !show" :class="{active:show}">
+           <span class="bold contactBtn" @click="show1 = !show1" :class="{active:show1}">
              Mobile
            </span>
              <Transition>
-              <p v-if="show">cheongyeonggg@gmail.com</p>
+              <p v-show="show1"><figure class="phoneIcon"></figure>010-2423-7734</p>
             </Transition>
         </div>
 
         <div class="GitHub">
-           <span class="bold" @click="show= !show" :class="{active:show}">
+           <span class="bold contactBtn" @click="show2= !show2" :class="{active:show2}">
              GitHub
            </span>
              <Transition>
-              <p v-if="show">cheongyeonggg@gmail.com</p>
+              <p v-show="show2"><figure class="gitIcon"></figure><a target="_blank" href="https://github.com/cheongyeong">https://github.com/cheongyeong</a></p>
             </Transition>
         </div>
        
     
       </div>
-
-
-
-
-
 
 
 
@@ -50,16 +45,22 @@
 <script>
 
 export default {
-  data() {
-    return {
-      show: true,
 
+  data(){
+    return{
+      
+         show: false,
+         show1: false,
+         show2: false,
+      } 
 
-    }
-  },
+    },
 
+ 
+  
+ 
+};
 
-}
 
 
 </script>
@@ -72,10 +73,12 @@ export default {
   opacity: 1;
 }
 
+
 .active{
-  left: 200px;
+  left: 265px;
   transition: all 0.5s ;
 }
 
-
 </style>
+
+
