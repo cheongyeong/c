@@ -1,7 +1,7 @@
 <template>
    <div class="bg-black" v-if="resume == true">
        <div class="page-bg">
-        <a class="downloadBtn" href="file/resume.pdf" download>이력서 저장</a>
+        <a class="downloadBtn" href="file/resume.pdf" download>Save</a>
         <div class="close" @click="resume = false">
           <img src="img/close.png" alt="">
         </div>
@@ -55,11 +55,11 @@
 
         <div class="buttonWrap">
            <div class="resume-button button" type="button" @click="resume = true">
-             이력서 확인
-             <span></span>
+             Resume
+
            </div>
            <div class="git-button button" type="button">
-             <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub 바로가기 </a>
+             <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub</a>
            </div>
         </div>
            

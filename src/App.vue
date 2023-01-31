@@ -3,6 +3,8 @@
   <link rel="stylesheet" href="css/index.css" >
   <link rel="stylesheet" href="css/header.css" >
   <link rel="stylesheet" href="css/footer.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js" >
+
   
 
   <div class="menu" id="menu" @click="menuShow = true">
@@ -57,11 +59,15 @@
 </template>
 
 <script>
-import intro from './components/intro.vue'
-import about from './components/about.vue'
-import project from './components/project.vue'
-import webClawling from './components/webClawling.vue'
-import contact from './components/contact.vue'
+import intro from './components/intro.vue';
+import about from './components/about.vue';
+import project from './components/project.vue';
+import webClawling from './components/webClawling.vue';
+import contact from './components/contact.vue';
+
+
+
+
 
 
 
@@ -72,7 +78,7 @@ import contact from './components/contact.vue'
 export default {
   name: 'App',
   components: {
-    intro,about,project,webClawling,contact, },
+    intro,about,project,webClawling,contact},
 
   methods: {
     goSection(e) {
@@ -91,9 +97,14 @@ export default {
     return {
       menuShow : false,
     }
-  },
+  }
     
 }
+
+
+
+
+
 
 
 </script>
