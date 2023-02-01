@@ -15,7 +15,7 @@
   <header>
     <nav>
       <div class="pcg-logo"></div>
-      <h1 class="myName">CHEONGYEONG</h1>
+      <h3 class="myName">CHEONGYEONG</h3>
     </nav>
   </header>
 

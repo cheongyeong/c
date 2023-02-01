@@ -42,3 +42,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+@media (max-width:1200px) {
+  .intro-section .orange-circle {
+    width: 250px;
+    height: 500px;
+    border-radius: 280px 0 0 280px;
+  }
+
+  .intro-section .mint-circle {
+    width: 100px;
+    height: 100px;
+  }
+}

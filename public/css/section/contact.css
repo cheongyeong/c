@@ -46,6 +46,12 @@
   border: 10px solid #fff;
   cursor: pointer;
   font-size: 20PX;
+  transition: left 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.contactBtn.active {
+  left: 265px;
 }
 
 .mail .contactBtn {
@@ -60,14 +66,20 @@
   background-color: #01D5AF;
 }
 
-.contact-wrap p {
+.contactC {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
+  color: #333;
   vertical-align: middle;
+  opacity: 0;
 }
 
+.contactBtn.active,
+.contactC {
+  opacity: 1;
+}
 
 .mailIcon {
   display: inline-block;

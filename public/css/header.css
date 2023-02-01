@@ -14,7 +14,6 @@ nav {
 
 .myName {
   text-align: center;
-  font-size: 20px;
   color: #fff;
   font-weight: bolder;
   line-height: 80px;
@@ -102,4 +101,19 @@ nav {
 
 .showMenu h1:hover {
   color: #01D5AF;
+}
+
+@media (max-width:1200px) {
+  header {
+    height: 70px;
+  }
+
+  .myName {
+    line-height: 70px;
+  }
+
+
+  #menu {
+    left: 21px;
+  }
 }

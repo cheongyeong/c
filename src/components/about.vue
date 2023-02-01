@@ -10,14 +10,16 @@
     </div>
 
     <section class="profile-section" id="about">
-      <div class="photo">
-        <img src="img/1-1.jpg" alt="">
-        <div class="profile-txt">
+    <div class="imageWrap">
+       <div class="photo">
+         <img src="img/1-1.jpg" alt="">
+         <div class="profile-txt">
           <h3>
             “ 반갑습니다. 새로운 것을 끊임없이
             도전하여 넓은 시야를 가진 개발자가
             되고 싶은 박천경입니다. ” </h3>
         </div>
+       </div>
       </div>
       <div class="aboutMe">
         <div class="about">

@@ -4,19 +4,21 @@
 .profile-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.imageWrap {
+  width: 30%;
+  height: 400px;
 }
 
 .photo {
-  display: inline-block;
-  width: 370px;
-  height: 400px;
-  background-color: #eee;
-  position: relative;
+  width: 100%;
   background-image: url(../img/1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 .profile-section p {
@@ -27,12 +29,11 @@
   width: 360px;
   height: 360px;
   text-align: center;
-  background-color: #2C45DF;
+  background-color: #222;
   border-radius: 100%;
-  position: relative;
   position: absolute;
-  right: -230px;
-  bottom: -280px;
+  right: -190px;
+  bottom: -160px;
 }
 
 .profile-txt h3 {
@@ -147,5 +148,25 @@
   color: #fff;
   line-height: 45px;
   margin: 50px 0;
+
+}
+
+
+@media (max-width:1200px) {
+  .aboutMe {
+    width: 100%;
+  }
+
+  .imageWrap {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .photo>img {
+    height: 400px;
+  }
+
+
 
 }
