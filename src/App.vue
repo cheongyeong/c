@@ -64,7 +64,7 @@ import about from './components/about.vue';
 import project from './components/project.vue';
 import webClawling from './components/webClawling.vue';
 import contact from './components/contact.vue';
-import clawlingSlide from './components/clawlingSlide.vue';
+
 
 
 
@@ -76,7 +76,7 @@ import clawlingSlide from './components/clawlingSlide.vue';
 export default {
   name: 'App',
   components: {
-    intro,about,project, webClawling, contact, clawlingSlide},
+    intro,about,project, webClawling, contact},
 
   methods: {
     goSection(e) {

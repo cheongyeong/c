@@ -1,31 +1,19 @@
 <template>
   <section>
+  <swiper
+    :slidesPerView="2.5"
+    :spaceBetween="30"
+    :loop="true"
+    :centeredSlides="true"
+    :navigation="true"
+    :modules="modules"
+    class="mySwiper" >
+    <swiper-slide class="content">Slide 1</swiper-slide>
+    <swiper-slide class="content">Slide 2</swiper-slide>
+    <swiper-slide class="content">Slide 3</swiper-slide>
 
-     <vueper-slides class="slideWrap no-shadow" 
-        :dragging-distance = "70"
-        :visible-slides="3"
-        :slide-ratio="1 / 3">
-              
-       <vueper-slide class="slide">
-         <div class="slideContent">dsdsd 1ss</div>
-       </vueper-slide>
-       <vueper-slide class="slide2">
-         <div class="slideContent"> dsd1ss</div>
-       </vueper-slide>
-       <vueper-slide class="slide3">
-         <div class="slideContent"> dsd1ss</div>
-       </vueper-slide>
-       <vueper-slide class="slide">
-         <div class="slideContent"> dsd1ss</div>
-       </vueper-slide>
-       <vueper-slide class="slide2">
-         <div class="slideContent"> dsd1ss</div>
-       </vueper-slide>
-       <vueper-slide class="slide3">
-         <div class="slideContent"> dsd1ss</div>
-       </vueper-slide>
+  </swiper>
 
-     </vueper-slides>
 
     </section>
 </template>
@@ -33,15 +21,28 @@
 
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
+  import { Navigation } from 'swiper';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import 'swiper/css';
+  import "swiper/css/navigation";
+
+
+
+
 
 
 export default {
+  components: {
+    Swiper,
+    SwiperSlide
+  },
 
-  components: { VueperSlides, VueperSlide },
-
-}
+  setup() {
+    return {
+      modules: [ Navigation ],
+    };
+  },
+};
   
 
 </script>
