@@ -16,8 +16,8 @@
 
          class="mySwiper" >
           <swiper-slide class="content green"><a target="_blank" href="http://cheongyeonggg.dothome.co.kr/greenhome/index.html">veiw</a></swiper-slide>
-          <swiper-slide class="content dosirak"></swiper-slide>
-          <swiper-slide class="content">Slide 3</swiper-slide>
+          <swiper-slide class="content dosirak"><a target="_blank" href="http://cheongyeonggg.dothome.co.kr/dosiraktong/index.html">veiw</a></swiper-slide>
+          <swiper-slide class="content richmond"><a target="_blank" href="http://cheongyeonggg.dothome.co.kr/therichmond/index.html">veiw</a></swiper-slide>
 
         </swiper>
       

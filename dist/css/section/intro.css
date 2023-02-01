@@ -6,6 +6,7 @@
 .intro-section {
   display: flex;
   align-items: center;
+  padding: 250px 0;
 }
 
 .intro-section .bg-circle {
