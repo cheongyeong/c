@@ -8,8 +8,9 @@
         <img class="resume" src="img/resume.jpg">
        </div>
     </div>
-
-     <div class="imageWrap">
+<div id="about" >
+     <div class="imageWrap" :class="{'show': !show }">
+       
        <div class="photo">
          <img src="img/1.png" alt="">
        </div>
@@ -22,7 +23,7 @@
        </div>
       </div>
 
-    <section class="profile-section" id="about">
+    <section class="profile-section">
      <!-- data-aos="fade-up" data-aos-duration="500" data-aos-offset="700" -->
 
       <div class="aboutMe">
@@ -30,7 +31,7 @@
          <div>
             <h4 class="bold">ABOUT</h4>
             <p>
-              박천경 PARK CHEON GYEONG<br>
+              박천경<br>
               1995.10.06<br>
               010-2423-7734<br>
               cheongyeonggg@gmail.com
@@ -68,7 +69,9 @@
 
            </div>
            <div class="git-button button" type="button">
-             <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub</a>
+             <a target="_blank" href="https://github.com/cheongyeong">
+               <span class="gitIcon"></span><span>GitHub</span>
+             </a>
            </div>
           </div>
 
@@ -80,11 +83,12 @@
     
 
     </section>
-
+</div>
 
     <span></span>
 
   
+
 </template>
 
 <script>
@@ -93,11 +97,10 @@ export default {
       data(){
   return {
     resume : false,
+    show : false,
   }
-},
-
+  },
 }
-
 </script>
 
 <style scoped>

@@ -35,6 +35,7 @@
 
 .content a:hover {
   background-color: #2C45DF;
+  border: none;
 }
 
 

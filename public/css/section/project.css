@@ -12,7 +12,7 @@
 }
 
 .tabList-wrap {
-  width: 18%;
+  width: 10%;
 }
 
 .listBtn {
@@ -20,6 +20,7 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .tabBtns {
@@ -41,7 +42,8 @@
 }
 
 .contents-wrap {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   background-color: #eee;
   position: relative;
 }
