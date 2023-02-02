@@ -28,7 +28,7 @@
       <div class="aboutMe">
         <div class="about">
          <div>
-            <h4 class="bold backBlue">ABOUT</h4>
+            <h4 class="bold">ABOUT</h4>
             <p>
               박천경 PARK CHEON GYEONG<br>
               1995.10.06<br>
@@ -38,7 +38,7 @@
          </div>
 
          <div class="edu">
-           <h4 class="bold backBlue">EDUCATION</h4>
+           <h4 class="bold">EDUCATION</h4>
            <p>
              2022.09 - 2023.02 뷰(Vue) 활용 프론트엔드 웹 개발자 양성 과정 수료<br>
              2014.03 - 2017.02 명지전문대학 산업디자인과 제품디자인 전공<br>
@@ -48,18 +48,30 @@
         </div>
 
         <div class="skils">
-          <h4 class="bold backBlue">SKILS</h4>
-          <div>
-            <img src="img/html-1.png" alt="">
-            <img src="img/css-1.png" alt="">
-            <img src="img/js-2.png" alt="">
-            <img src="img/jq.png" alt="">
-            <img src="img/node.png" alt="">
-            <img src="img/sql.png" alt="">
-            <img src="img/vue.png" alt="">
-            <img src="img/photoshop.png" alt="">
-            <img src="img/ai.png" alt="">
+          <div class="skil">
+            <h4 class="bold">SKILS</h4>
+            <div>
+              <img src="img/html-1.png" alt="">
+              <img src="img/css-1.png" alt="">
+              <img src="img/js-2.png" alt="">
+              <img src="img/jq.png" alt="">
+              <img src="img/node.png" alt="">
+              <img src="img/sql.png" alt="">
+              <img src="img/vue.png" alt="">
+              <img src="img/photoshop.png" alt="">
+              <img src="img/ai.png" alt="">
+            </div>
           </div>
+          <div class="buttonWrap">
+           <div class="resume-button button" type="button" @click="resume = true">
+             Resume
+
+           </div>
+           <div class="git-button button" type="button">
+             <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub</a>
+           </div>
+          </div>
+
         </div>
       </div>
 
@@ -68,15 +80,6 @@
     
 
     </section>
-      <div class="buttonWrap">
-           <div class="resume-button button" type="button" @click="resume = true">
-             Resume
-
-           </div>
-           <div class="git-button button" type="button">
-             <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub</a>
-           </div>
-      </div>
 
 
     <span></span>

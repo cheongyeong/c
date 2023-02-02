@@ -36,7 +36,7 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 
@@ -70,13 +70,7 @@ section.contactMe-section {
   font-weight: 800;
 }
 
-.backBlue {
-  display: inline-block;
-  background-color: #2C45DF;
-  color: #fff;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
+
 
 .circle-wrap {
   position: relative;
