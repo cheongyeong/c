@@ -19,7 +19,7 @@
     </nav>
   </header>
 
-  <main class="index-page">
+  <main class="index-page" id="app">
    <div class="menu-bgBlack" v-if="menuShow == true">
       <div class="closeBox" @click="menuShow = false">
          <h4>close</h4>
@@ -47,7 +47,7 @@
       <div class="footer-circle">
 
         <img src="img/logo-white.png" alt="">
-     </div>
+     </div>y
     </div>
   </footer>
 </main>
@@ -64,19 +64,20 @@ import about from './components/about.vue';
 import project from './components/project.vue';
 import webClawling from './components/webClawling.vue';
 import contact from './components/contact.vue';
-
-
-
-
-
-
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 
 
 export default {
   name: 'App',
   components: {
-    intro,about,project, webClawling, contact},
+    intro,about,project, webClawling, contact,
+    },
+    
+    created() {
+    AOS.init()
+  },
 
   methods: {
     goSection(e) {

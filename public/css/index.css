@@ -55,7 +55,7 @@ section {
 
 section.contactMe-section {
   border-bottom: none;
-  padding: 200px 0 0;
+  padding-bottom: 0;
 }
 
 .blue {
@@ -80,7 +80,7 @@ section.contactMe-section {
 
 .circle-wrap {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .circle-wrap .mint-circle {
@@ -116,8 +116,12 @@ section.contactMe-section {
 
   .index-page {
     border: 70px solid #2C45DF;
-    margin-top: -70px;
+    margin-top: 0px;
 
+  }
+
+  section {
+    padding: 150px 0;
   }
 
 

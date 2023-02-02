@@ -1,56 +1,67 @@
 /* profile-section 시작 */
 
 
-.profile-section {
+section.profile-section {
+  padding-top: 0;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 
 }
 
+.imageWrap {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 200px;
+  border-radius: 0px 170px 170px 0px;
+  background-color: #222;
+  height: 320px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .photo {
-  display: inline-block;
-  width: 370px;
-  height: 400px;
-  background-color: #eee;
+  width: 30%;
   position: relative;
-  background-image: url(../img/1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.photo img {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+}
+
+
+.profile-txt {
+  width: 25%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.profile-txt h3 {
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .profile-section p {
   margin-left: 10px;
 }
 
-.profile-txt {
-  width: 360px;
-  height: 360px;
-  text-align: center;
-  background-color: #2C45DF;
-  border-radius: 100%;
-  position: relative;
-  position: absolute;
-  right: -230px;
-  bottom: -280px;
-}
-
-.profile-txt h3 {
-  width: 80%;
-  color: #fff;
-  font-weight: 400;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .aboutMe {
-  width: 40%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
 }
 
-.aboutMe>div {
-  margin-bottom: 50px;
+.about {
+  width: 50%;
+}
+
+.skils {
+  width: 50%;
 }
 
 .skils img {
@@ -147,5 +158,25 @@
   color: #fff;
   line-height: 45px;
   margin: 50px 0;
+
+}
+
+
+@media (max-width:1200px) {
+  .aboutMe {
+    width: 100%;
+  }
+
+  .imageWrap {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .photo>img {
+    height: 400px;
+  }
+
+
 
 }

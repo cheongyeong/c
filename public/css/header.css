@@ -4,7 +4,7 @@ header {
   position: fixed;
   top: 0;
   background-color: #2C45DF;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
   position: fixed;
   top: 50%;
   left: 26px;
-  z-index: 2;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -66,7 +66,6 @@ nav {
   width: calc(100% - 160px);
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
-  padding: 200px 180px;
   box-sizing: border-box;
   z-index: 10;
   position: fixed;
@@ -92,11 +91,19 @@ nav {
   margin-top: 20px;
 }
 
+.showMenu {
+  position: absolute;
+  left: 150px;
+  top: 43%;
+  transform: translateY(-50%);
+
+}
+
 .showMenu h1 {
   color: #fff;
   font-weight: 800;
   cursor: pointer;
-
+  margin-bottom: 20px;
 }
 
 .showMenu h1:hover {
@@ -115,5 +122,10 @@ nav {
 
   #menu {
     left: 21px;
+  }
+
+  .menu-bgBlack {
+    width: calc(100% - 140px);
+    top: 70px;
   }
 }

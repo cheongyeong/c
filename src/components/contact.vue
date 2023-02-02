@@ -2,30 +2,29 @@
     <section class="contactMe-section" id="contact">
 
       <h1 class="bold">CONTACT ME</h1>
-      <h2>지금까지 저의 포트폴리오를 봐주셔서 감사합니다.</h2>
 
 
       <div class="contact-wrap">
-        <div class="mail">
-           <span class="bold contactBtn" @click="leftMover">
+        <div class="contactBtn"  @click="leftMover">
+           <span class="mail bold">
              Mail
            </span>
             <p class="contactC"><figure class="mailIcon"></figure>cheongyeonggg@gmail.com</p>
         </div>
 
-        <div class="mobile">
-           <span class="bold contactBtn" @click="leftMover" >
+        <div class="contactBtn" @click="leftMover">
+           <span class="mobile bold">
              Mobile
            </span>
            <p class="contactC"><figure class="phoneIcon"></figure>010-2423-7734</p>
 
         </div>
 
-        <div class="GitHub">
-           <span class="bold contactBtn" @click="leftMover">
+        <div class="contactBtn" @click="leftMover">
+           <span class="GitHub bold">
              GitHub
            </span>
-           <p class="contactC"><figure class="gitIcon"></figure><a target="_blank" href="https://github.com/cheongyeong">https://github.com/cheongyeong</a></p>
+           <p class="contactC"><figure class="gitIcon"></figure><a target="_blank" href="https://github.com/cheongyeong">github.com/cheongyeong</a></p>
         </div>
        
     

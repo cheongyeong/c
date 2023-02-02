@@ -18,6 +18,7 @@
   border-bottom: none;
   color: #222;
   margin-top: 80px;
+  transition: all 0.3s;
 }
 
 
@@ -41,7 +42,6 @@ h4 {
 
 p {
   font-size: 15px;
-  line-height: 25px;
 }
 
 section {
@@ -55,7 +55,7 @@ section {
 
 section.contactMe-section {
   border-bottom: none;
-  padding: 200px 0 0;
+  padding-bottom: 0;
 }
 
 .blue {
@@ -80,7 +80,7 @@ section.contactMe-section {
 
 .circle-wrap {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .circle-wrap .mint-circle {
@@ -91,4 +91,38 @@ section.contactMe-section {
   position: absolute;
   left: -80px;
   top: -200px;
+}
+
+
+
+
+@media (max-width:1200px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+
+  .index-page {
+    border: 70px solid #2C45DF;
+    margin-top: 0px;
+
+  }
+
+  section {
+    padding: 150px 0;
+  }
+
+
 }

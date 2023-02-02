@@ -27,3 +27,22 @@ footer {
   width: 30%;
   margin-top: 50px;
 }
+
+@media (max-width : 1200px) {
+  .pcg-logoWrap {
+    border-bottom: none;
+    margin-top: -50px;
+  }
+
+  .footer-circle {
+    width: 600px;
+    height: 350px;
+    border-radius: 650px 650px 0 0;
+    top: 150px;
+  }
+
+  .footer-circle img {
+    margin-top: 60px;
+  }
+
+}

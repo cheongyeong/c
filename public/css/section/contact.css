@@ -4,36 +4,43 @@
   text-align: center;
 }
 
+
 .contact-wrap {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
-.contact-wrap>div {
+.contactBtn {
   width: calc(32% - 10px);
-  background-color: #fff;
+  /* background-color: #555; */
   height: 170px;
   border-radius: 90px;
   position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  z-index: 2;
+
 }
 
-.mail {
+.contactBtn:nth-child(1) {
   border: 7px solid #FF783E;
 }
 
-.mobile {
+.contactBtn:nth-child(2) {
   border: 7px solid #2C45DF;
 }
 
-.GitHub {
+.contactBtn:nth-child(3) {
   border: 7px solid #01D5AF;
 }
 
 
-.contactBtn {
+.contactBtn span {
   display: inline-block;
   box-sizing: border-box;
   width: 170px;
@@ -44,25 +51,28 @@
   line-height: 150px;
   color: #fff;
   border: 10px solid #fff;
-  cursor: pointer;
   font-size: 20PX;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.5s ease-in-out;
   z-index: 1;
 }
 
-.contactBtn.active {
+.contactBtn.active span {
   left: 265px;
 }
 
-.mail .contactBtn {
+.contactBtn.active .contactC {
+  opacity: 1;
+}
+
+.contactBtn .mail {
   background-color: #FF783E;
 }
 
-.mobile .contactBtn {
+.contactBtn .mobile {
   background-color: #2C45DF;
 }
 
-.GitHub .contactBtn {
+.contactBtn .GitHub {
   background-color: #01D5AF;
 }
 
@@ -74,12 +84,9 @@
   color: #333;
   vertical-align: middle;
   opacity: 0;
+  transition: left 0.5s ease-in-out;
 }
 
-.contactBtn.active,
-.contactC {
-  opacity: 1;
-}
 
 .mailIcon {
   display: inline-block;
@@ -109,4 +116,26 @@
   background-size: cover;
   margin-right: 5px;
   opacity: 0.5;
+}
+
+
+@media (max-width:1200px) {
+
+  .contactBtn {
+    width: 55%;
+    height: 130px;
+  }
+
+  .contactBtn span {
+    width: 130px;
+    height: 130px;
+    line-height: 116px;
+    border: 7px solid #fff;
+    font-size: 18PX;
+  }
+
+  .contactBtn.active span {
+    left: 325px;
+  }
+
 }

@@ -9,35 +9,42 @@
        </div>
     </div>
 
-    <section class="profile-section" id="about">
-    <div class="imageWrap">
+     <div class="imageWrap">
        <div class="photo">
-         <img src="img/1-1.jpg" alt="">
-         <div class="profile-txt">
+         <img src="img/1.png" alt="">
+       </div>
+       <div class="profile-txt">
           <h3>
             “ 반갑습니다. 새로운 것을 끊임없이
             도전하여 넓은 시야를 가진 개발자가
-            되고 싶은 박천경입니다. ” </h3>
-        </div>
+            되고 싶은 박천경입니다. ” 
+          </h3>
        </div>
       </div>
+
+    <section class="profile-section" id="about">
+     <!-- data-aos="fade-up" data-aos-duration="500" data-aos-offset="700" -->
+
       <div class="aboutMe">
         <div class="about">
-          <h4 class="bold backBlue">ABOUT</h4>
-          <p>
-            박천경 PARK CHEON GYEONG<br>
-            1995.10.06<br>
-            010-2423-7734<br>
-            cheongyeonggg@gmail.com
-          </p>
-        </div>
-        <div class="edu">
-          <h4 class="bold backBlue">EDUCATION</h4>
-          <p>
-            2022.09 - 2023.02 뷰(Vue) 활용 프론트엔드 웹 개발자 양성 과정 수료<br>
-            2014.03 - 2017.02 명지전문대학 산업디자인과 제품디자인 전공<br>
-            2011.03 - 2014.02 서울디자인고등학교 조명예술디자인과<br>
-          </p>
+         <div>
+            <h4 class="bold backBlue">ABOUT</h4>
+            <p>
+              박천경 PARK CHEON GYEONG<br>
+              1995.10.06<br>
+              010-2423-7734<br>
+              cheongyeonggg@gmail.com
+           </p>
+         </div>
+
+         <div class="edu">
+           <h4 class="bold backBlue">EDUCATION</h4>
+           <p>
+             2022.09 - 2023.02 뷰(Vue) 활용 프론트엔드 웹 개발자 양성 과정 수료<br>
+             2014.03 - 2017.02 명지전문대학 산업디자인과 제품디자인 전공<br>
+             2011.03 - 2014.02 서울디자인고등학교 조명예술디자인과<br>
+           </p>
+         </div>
         </div>
 
         <div class="skils">
@@ -54,8 +61,14 @@
             <img src="img/ai.png" alt="">
           </div>
         </div>
+      </div>
 
-        <div class="buttonWrap">
+           
+
+    
+
+    </section>
+      <div class="buttonWrap">
            <div class="resume-button button" type="button" @click="resume = true">
              Resume
 
@@ -63,12 +76,7 @@
            <div class="git-button button" type="button">
              <a target="_blank" href="https://github.com/cheongyeong"><span class="gitIcon"></span>GitHub</a>
            </div>
-        </div>
-           
-
       </div>
-
-    </section>
 
 
     <span></span>
@@ -83,7 +91,8 @@ export default {
   return {
     resume : false,
   }
-}
+},
+
 }
 
 </script>
