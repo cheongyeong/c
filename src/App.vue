@@ -1,4 +1,6 @@
 <template>
+
+
   <link rel="stylesheet" href="css/reset.css" >
   <link rel="stylesheet" href="css/index.css" >
   <link rel="stylesheet" href="css/header.css" >
@@ -47,15 +49,16 @@
       <div class="footer-circle">
 
         <img src="img/logo-white.png" alt="">
-     </div>y
+     </div>
     </div>
   </footer>
 </main>
 
+
 <span></span>
 
   
-  
+
 </template>
 
 <script>
@@ -91,6 +94,8 @@ export default {
       }
     },
   },
+
+
 
   data() {
     return {

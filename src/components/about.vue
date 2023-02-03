@@ -8,8 +8,8 @@
         <img class="resume" src="img/resume.jpg">
        </div>
     </div>
-<div id="about" >
-     <div class="imageWrap" :class="{'show': !show }">
+<div id="about">
+     <div class="imageWrap" data-aos="fade-right" data-aos-duration="700" data-aos-offset="700">
        
        <div class="photo">
          <img src="img/1.png" alt="">
@@ -23,8 +23,7 @@
        </div>
       </div>
 
-    <section class="profile-section">
-     <!-- data-aos="fade-up" data-aos-duration="500" data-aos-offset="700" -->
+    <section class="profile-section" >
 
       <div class="aboutMe">
         <div class="about">
@@ -93,34 +92,33 @@
 
 <script>
 
+
 export default {
       data(){
   return {
     resume : false,
-    show : false,
-    lastScrollPosition: 0,
   }
   },
-  mounted () {
-  window.addEventListener('scroll', this.onScroll)
-  },
+ 
+
+}
 
 
-methods: {
-  onScroll () {
-    // Get the current scroll position
-    const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-    // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
-    if (currentScrollPosition < 0) {
-      return
-    }
-    // Here we determine whether we need to show or hide the navbar
-    this.show = currentScrollPosition < this.lastScrollPosition
-    // Set the current scroll position as the last scroll position
-    this.lastScrollPosition = currentScrollPosition
-  }
-}
-}
+// setup() {
+//     onMounted (()=>{
+//       
+//   }
+//      window.addEventListener('scroll', onScroll);
+
+//    return{
+//     onMounted
+//    }
+
+//   }  ) 
+// },
+
+
+
 </script>
 
 <style scoped>

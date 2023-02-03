@@ -4,7 +4,7 @@
     </div>
 
     <section class="clawling-section" id="webClawling">
-      <h1 class="bold">WEB CLAWLING</h1>
+      <h1 class="bold">WEB CLONE</h1>
       <div class="slideWrap">
         <swiper
          :options="swiperOption"
