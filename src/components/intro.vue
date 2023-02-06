@@ -1,5 +1,5 @@
 <template>
-    <section class="intro-section">
+    <section class="intro-section" id="intro">
       <h1>안녕하세요.<br>
         <span class="blue bold">프론트엔드</span><br>
         <span class="bold">개발자</span><br>

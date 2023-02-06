@@ -33,8 +33,10 @@
        <h1 v-on:click="goSection" data-target="web clawling" class="toSection" @click="menuShow = false">web clawling</h1>
        <h1 v-on:click="goSection" data-target="contact" class="toSection" @click="menuShow = false">contact</h1>
       </div>
-      
-       
+    </div>
+
+    <div class="topBtn" >
+      <h5 v-on:click="goSection" data-target="intro" class="toSection" >Top</h5>
     </div>
 
    <intro />
@@ -69,6 +71,7 @@ import webClawling from './components/webClawling.vue';
 import contact from './components/contact.vue';
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import { add } from 'dom7';
 
 
 
@@ -82,6 +85,7 @@ export default {
     AOS.init()
   },
 
+
   methods: {
     goSection(e) {
       e.preventDefault();
@@ -93,6 +97,14 @@ export default {
         clickNav.scrollIntoView({ behavior: 'smooth' });
       }
     },
+
+    showup(e) {
+      const scroll = window.pageYOffset;
+      if( scroll >= 600 ){
+        add.clsssList('.active');
+      }
+
+    }
   },
 
 
