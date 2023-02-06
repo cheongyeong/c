@@ -68,7 +68,7 @@
 
 
 .antra {
-  background-image: url(../../img/pro1.jpg);
+  background-image: url(../../img/pro-1.jpg);
 }
 
 .seoulTakju {
@@ -83,16 +83,32 @@
   width: 200px;
   opacity: 0.5;
   position: absolute;
-  bottom: 50px;
-  left: 135px;
+  bottom: 55px;
+  left: 245px;
 }
 
 
 
 .projectTitle {
   position: absolute;
-  top: 80px;
-  left: 80px;
+  top: 60px;
+  left: 60px;
+}
+.projectTitle h2{
+  margin-left: 25px;
+}
+.projectTitle h2::before{
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 47%;
+  background-color: #222;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.projectBtn{
+  display: flex;  
 }
 
 .projectTitle h3 {
@@ -102,19 +118,29 @@
 }
 
 .more {
-  width: 140px;
+  width: 120px;
   height: 40px;
-  border: 1px solid #222;
+  background-color: #E7E7E7;
+  border-radius: 20px;
   text-align: center;
   line-height: 40px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-right: 15px;
   cursor: pointer;
   font-size: 15px;
+}
+
+.more a{
+  color: #222;
 }
 
 .more:hover {
   background-color: #222;
   color: #fff;
+}
+.more:hover >a {
+  color: #fff;
+
 }
 
 .projectBg {
