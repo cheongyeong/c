@@ -30,7 +30,7 @@
       <div class="showMenu">
        <h1 v-on:click="goSection" data-target="about" class="toSection" @click="menuShow = false">about me</h1>
        <h1 v-on:click="goSection" data-target="project" class="toSection" @click="menuShow = false">project</h1>
-       <h1 v-on:click="goSection" data-target="web clawling" class="toSection" @click="menuShow = false">web clawling</h1>
+       <h1 v-on:click="goSection" data-target="webclone" class="toSection" @click="menuShow = false">web clone</h1>
        <h1 v-on:click="goSection" data-target="contact" class="toSection" @click="menuShow = false">contact</h1>
       </div>
     </div>
