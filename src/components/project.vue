@@ -62,7 +62,7 @@
          <div class="projectBtn">
            <div class="more" @click="seomun = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/seomunNightMarket">Git Hub</a></div>
-           <div class="more"><a target="_blank" href="">Web Page</a></div>
+           <div class="more"><a target="_blank" href="http://cheongyeonggg.dothome.co.kr/seomun/main.html">Web Page</a></div>
          </div>
       </div>
   </div>
