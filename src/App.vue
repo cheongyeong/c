@@ -17,7 +17,7 @@
   <header>
     <nav>
       <div class="pcg-logo"></div>
-      <h3 class="myName">CHEONGYEONG</h3>
+      <h3 class="myName toSection" v-on:click="goSection" data-target="intro">CHEONGYEONG</h3>
     </nav>
   </header>
 
@@ -35,9 +35,7 @@
       </div>
     </div>
 
-    <div class="topBtn" >
-      <h5 v-on:click="goSection" data-target="intro" class="toSection" >Top</h5>
-    </div>
+
 
    <intro />
    <about />

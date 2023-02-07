@@ -39,7 +39,7 @@
          <div class="projectBtn">
            <div class="more" @click="antra = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/Anthracite-Coffee.">Git Hub</a></div>
-           <div class="more"><a target="_blank" href="https://antracite.herokuapp.com/">Web Page</a></div>
+           <div class="more"><a target="_blank" href="https://anthracite-coffee.herokuapp.com/">Web Page</a></div>
          </div>
         </div>
      </div>
