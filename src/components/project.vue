@@ -39,7 +39,7 @@
          <div class="projectBtn">
            <div class="more" @click="antra = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/Anthracite-Coffee.">Git Hub</a></div>
-           <div class="more"><a target="_blank" href="https://anthracite-coffee.herokuapp.com/">Web Page</a></div>
+           <div class="more"><a target="_blank" href="anthracite-coffee-cheongyeong.koyeb.app">Web Page</a></div>
          </div>
         </div>
      </div>
@@ -50,7 +50,7 @@
          <div class="projectBtn">
            <div class="more" @click="takju = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/seoulTakju">Git Hub</a></div>
-           <div class="more"><a target="_blank" href="https://seoultakjju.herokuapp.com/">Web Page</a></div>
+           <div class="more"><a target="_blank" href="seoultakju-cheongyeong.koyeb.app">Web Page</a></div>
          </div>
       </div>
        <img class="bori" src="img/move-bori.gif" alt="">
