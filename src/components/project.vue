@@ -36,6 +36,7 @@
       <div v-show="currentTab == 0" class="tab-cont antra">
        <div class="projectTitle">
          <h2>앤트러사이트 커피<br>반응형 웹사이트 리뉴얼</h2>
+         <h3>Node.js / mySQL / javascript / jquery / ejs</h3> 
          <div class="projectBtn">
            <div class="more" @click="antra = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/Anthracite-Coffee.">Git Hub</a></div>
@@ -47,6 +48,7 @@
      <div v-show="currentTab == 1" class="tab-cont seoulTakju">
       <div class="projectTitle">
          <h2>서울탁주<br>반응형 웹사이트 리뉴얼</h2>
+         <h3>Node.js / mySQL / javascript / jquery / ejs</h3> 
          <div class="projectBtn">
            <div class="more" @click="takju = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/seoulTakju">Git Hub</a></div>
@@ -59,6 +61,7 @@
      <div v-show="currentTab == 2" class="tab-cont seomun" >
        <div class="projectTitle">
          <h2>서문시장야시장<br>반응형 웹사이트 리뉴얼</h2>
+         <h3>javascript / html / css</h3> 
          <div class="projectBtn">
            <div class="more" @click="seomun = true">Mockup</div>
            <div class="more"><a target="_blank" href="https://github.com/cheongyeong/seomunNightMarket">Git Hub</a></div>
