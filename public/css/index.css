@@ -86,7 +86,7 @@ section.contactMe-section {
   top: -200px;
 }
 
-.topBtn{
+.topBtn {
   width: 100px;
   height: 100px;
   background-color: #222;
@@ -98,8 +98,13 @@ section.contactMe-section {
   right: 40px;
   bottom: 40px;
   z-index: 100;
+  transition: all 0.5s;
+  opacity: 0;
 }
 
+.topBtn.show {
+  opacity: 1;
+}
 
 
 

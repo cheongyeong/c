@@ -52,6 +52,8 @@
      </div>
     </div>
   </footer>
+  
+
 </main>
 
 
@@ -69,7 +71,7 @@ import webClawling from './components/webClawling.vue';
 import contact from './components/contact.vue';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import { add } from 'dom7';
+
 
 
 
@@ -82,6 +84,16 @@ export default {
     created() {
     AOS.init()
   },
+
+   
+  data() {
+    return {
+      menuShow : false,
+      btnShow : false,
+      scrollTop: 0,
+    }
+  },
+  
 
 
   methods: {
@@ -96,25 +108,9 @@ export default {
       }
     },
 
-    showup(e) {
-      const scroll = window.pageYOffset;
-      if( scroll >= 600 ){
-        add.clsssList('.active');
-      }
-
-    }
   },
-
-
-
-  data() {
-    return {
-      menuShow : false,
-    }
-  }
-    
+ 
 }
-
 
 
 
