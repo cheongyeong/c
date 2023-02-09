@@ -135,7 +135,9 @@
   }
 
   .contactBtn.active span {
-    left: 325px;
+    left: 320px;
   }
 
 }
+
+@media (max-width:1000px) {}

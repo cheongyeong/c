@@ -55,7 +55,7 @@
            <div class="more"><a target="_blank" href="https://seoultakju-cheongyeong.koyeb.app">Web Page</a></div>
          </div>
       </div>
-       <img class="bori" src="img/move-bori.gif" alt="">
+
      </div>
 
      <div v-show="currentTab == 2" class="tab-cont seomun" >

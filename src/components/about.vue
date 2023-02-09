@@ -9,8 +9,7 @@
        </div>
     </div>
 <div id="about">
-     <div class="imageWrap" data-aos="fade-right" data-aos-duration="700" data-aos-offset="700">
-       
+    <div class="imageWrap" id="target" v-bind:class="{show:showup==true}" >
        <div class="photo">
          <img src="img/1.png" alt="">
        </div>
@@ -21,7 +20,7 @@
             되고 싶은 박천경입니다. ” 
           </h3>
        </div>
-      </div>
+    </div>
 
     <section class="profile-section" >
 
@@ -40,9 +39,9 @@
          <div class="edu">
            <h4 class="bold">EDUCATION</h4>
            <p>
-             2022.09 - 2023.02 뷰(Vue) 활용 프론트엔드 웹 개발자 양성 과정 수료<br>
-             2014.03 - 2017.02 명지전문대학 산업디자인과 제품디자인 전공<br>
-             2011.03 - 2014.02 서울디자인고등학교 조명예술디자인과<br>
+             2022.09 - 2023.02 <br class="br-none"> 뷰(Vue) 활용 프론트엔드 웹 개발자 양성 과정 수료<br>
+             2014.03 - 2017.02 <br class="br-none"> 명지전문대학 산업디자인과 제품디자인 전공<br>
+             2011.03 - 2014.02 <br class="br-none"> 서울디자인고등학교 조명예술디자인과<br>
            </p>
          </div>
         </div>
@@ -97,25 +96,37 @@ export default {
       data(){
   return {
     resume : false,
+    showup: false,
+    // scrollTop: 0,
+    // target: null,
   }
   },
- 
+
+  mounted() {
+     document.addEventListener('scroll', this.scrollshow);
+},
+
+ unmounted() {
+    document.removeEventListener('scroll', this.scrollshow);
+   },
+
+ methods: {
+   scrollshow: function (e) {
+    this.target = document.querySelector('#target');
+    let section = document.querySelector('#about');
+    this.scrollTop = document.documentElement.scrollTop;
+    console.log(section.offsetTop);
+            if (this.scrollTop > section.offsetTop-120) {
+          this.showup = true;
+        } else {
+          this.showup = false;
+        }
+    
+  }
+  
+ },
 
 }
-
-
-// setup() {
-//     onMounted (()=>{
-//       
-//   }
-//      window.addEventListener('scroll', onScroll);
-
-//    return{
-//     onMounted
-//    }
-
-//   }  ) 
-// },
 
 
 
