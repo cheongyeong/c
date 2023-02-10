@@ -70,7 +70,6 @@ import project from './components/project.vue';
 import webClawling from './components/webClawling.vue';
 import contact from './components/contact.vue';
 import AOS from 'aos';
-import "aos/dist/aos.css";
 
 
 

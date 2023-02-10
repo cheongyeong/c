@@ -1,7 +1,7 @@
 <template>
    <div class="bg-black" v-if="resume == true">
        <div class="page-bg">
-        <a class="downloadBtn" href="file/resume.pdf" download >Save</a>
+        <a class="downloadBtn" href="file/resume.pdf" download>Save</a>
         <div class="close" @click="resume = false">
           <img src="img/close.png" alt="">
         </div>
