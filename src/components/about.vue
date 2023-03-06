@@ -11,7 +11,7 @@
 <div id="about">
     <div class="imageWrap" id="target" v-bind:class="{show:showup==true}" >
        <div class="photo">
-         <img src="img/1.png" alt="">
+         <img src="img/profile.png" alt="">
        </div>
        <div class="profile-txt">
           <h3>
