@@ -1,9 +1,7 @@
 <template>
-    <div class="circle-wrap">
-      <div class="mint-circle"></div>
-    </div>
+    
 
-    <section class="clawling-section" id="webClawling">
+    <section class="clawling-section" id="webclone">
       <h1 class="bold">WEB CLONE</h1>
       <div class="slideWrap">
         <swiper

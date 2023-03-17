@@ -2,6 +2,7 @@
 
 .contactMe-section {
   text-align: center;
+  padding: 250px 0 300px;
 }
 
 
@@ -16,7 +17,6 @@
 
 .contactBtn {
   width: calc(32% - 30px);
-  /* background-color: #555; */
   height: 170px;
   border-radius: 90px;
   position: relative;
@@ -24,6 +24,7 @@
   margin-bottom: 20px;
   cursor: pointer;
   z-index: 2;
+  background-color: #fff;
 
 }
 
@@ -119,23 +120,3 @@
 }
 
 
-@media (max-width:1200px) {
-
-  .contactBtn {
-    width: 55%;
-    height: 130px;
-  }
-
-  .contactBtn span {
-    width: 130px;
-    height: 130px;
-    line-height: 116px;
-    border: 7px solid #fff;
-    font-size: 18PX;
-  }
-
-  .contactBtn.active span {
-    left: 325px;
-  }
-
-}

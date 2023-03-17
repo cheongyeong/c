@@ -1,131 +1,39 @@
 header {
   width: 100%;
-  height: 80px;
   position: fixed;
-  top: 0;
-  background-color: #2C45DF;
-  z-index: 2;
-}
-
-nav {
-  padding: 0 80px;
+  z-index: 5;
+  padding: 20px 30px;
   box-sizing: border-box;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
 }
 
-.myName {
-  text-align: center;
-  color: #fff;
-  font-weight: bolder;
-  line-height: 80px;
-}
 
-#menu {
-  position: fixed;
-  top: 50%;
-  left: 26px;
-  z-index: 4;
-  cursor: pointer;
-}
+nav{
+  display: flex;
+  justify-content: space-between;
 
-#menu>span {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
 }
-
-#menu>span:nth-child(2) {
-  margin: 6px 0;
-}
-
-#menuBtn {
+.logo{
+  background-image: url(../img/logo.png);
   width: 100px;
-  height: 100px;
-  background-color: #222;
-  color: #fff;
-  font-weight: bolder;
-  text-align: center;
-  line-height: 100px;
-  position: absolute;
-  left: 80px;
-  top: 50%;
-  display: none;
-}
-
-#menuBtn.active {
-  display: none;
-}
-
-
-
-#menu.active {
-  display: block;
-}
-
-.menu-bgBlack {
-  width: calc(100% - 160px);
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
-  box-sizing: border-box;
-  z-index: 10;
-  position: fixed;
-  top: 80px;
-}
-
-.closeBox {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  top: 43%;
-  transform: translateY(-50%);
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.closeBox h4 {
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-
-.showMenu {
-  position: absolute;
-  left: 150px;
-  top: 43%;
-  transform: translateY(-50%);
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
 
 }
 
-.showMenu h1 {
-  color: #fff;
-  font-weight: 800;
-  cursor: pointer;
+.menu li{
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: right;
+}
+.menu li:hover {
+  font-weight:900;
 }
 
-.showMenu h1:hover {
-  color: #01D5AF;
-}
-
-@media (max-width:1200px) {
-  header {
-    height: 70px;
-  }
-
-  .myName {
-    line-height: 70px;
-  }
 
 
-  #menu {
-    left: 21px;
-  }
 
-  .menu-bgBlack {
-    width: calc(100% - 140px);
-    top: 70px;
-  }
-}

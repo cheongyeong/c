@@ -1,3 +1,6 @@
+
+
+
 /* project-section 시작 */
 .project-section h1 {
   margin-bottom: 50px;
@@ -5,122 +8,56 @@
 
 
 
-.project-wrap {
+.project-section>div{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 6px rgba(218, 218, 218, 0.25);
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-.tabList-wrap {
-  width: 10%;
-}
-
-.listBtn {
-  padding: 10px 0;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.tabBtns {
-  display: flex;
-}
-
-.tabBtn {
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-color: #eee;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.tabBtns h3 {
-  opacity: 0.5;
-  font-weight: 800;
-}
-
-.contents-wrap {
-  width: 90%;
-  max-width: 1200px;
-  background-color: #eee;
-  position: relative;
-}
-
-
-.tabBtns.active .tabBtn {
-  background-color: #FF783E;
-}
-
-.tabBtns.active h3 {
-  opacity: 1;
-}
-
-
-.tab-cont {
-  width: 100%;
-  padding-bottom: 55%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-
-.antra {
-  background-image: url(../../img/pro-1.jpg);
-}
-
-.seoulTakju {
-  background-image: url(../../img/pro2.jpg);
-}
-
-.seomun {
-  background-image: url(../../img/pro3.jpg);
-}
-
-.seoulTakju .bori {
-  width: 200px;
-  opacity: 0.5;
-  position: absolute;
-  bottom: 55px;
-  left: 245px;
-}
-
-
-
-.projectTitle {
-  position: absolute;
-  top: 60px;
-  left: 60px;
-}
-.projectTitle h2{
-  margin-left: 25px;
-}
-.projectTitle h2::before{
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 47%;
-  background-color: #222;
-  position: absolute;
-  top: 5px;
-  left: 0;
-}
-.projectBtn{
-  display: flex;  
+.projectTitle{
+  width: 30%;
 }
 
 .projectTitle h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin: 15px 0;
   opacity: 0.5;
+}
+
+
+
+.projectPhoto{
+  width: 68%;
+}
+
+.anthra .projectPhoto{
+  background: url(../../img/pro1.jpg);
+  padding-top: 40%;
+}
+.seoulTakju .projectPhoto{
+  background: url(../../img/pro2.jpg);
+  padding-top: 40%;
+}
+.seomun .projectPhoto{
+  background: url(../../img/pro3.jpg);
+  padding-top: 40%;
+}
+
+
+.projectBtn {
+  display: flex;
 }
 
 .more {
   width: 120px;
   height: 40px;
-  background-color: #E7E7E7;
+  background-color: #222;
   border-radius: 20px;
   text-align: center;
   line-height: 40px;
@@ -128,29 +65,33 @@
   margin-right: 15px;
   cursor: pointer;
   font-size: 15px;
+  color: #fff;
 }
 
-.more a{
-  color: #222;
+.more a {
+  color: #fff;
 }
 
 .more:hover {
-  background-color: #222;
-  color: #fff;
-}
-.more:hover >a {
-  color: #fff;
+  font-weight: bold;
+} 
 
-}
+.more:hover>a {
+  font-weight: bold;
+} 
+
+
+
+
 
 .projectBg {
-  width: calc(100% - 160px);
-  height: 95vh;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
   padding: 100px;
   box-sizing: border-box;
   position: fixed;
-  top: 80px;
+  top: 0px;
   z-index: 10;
   margin: 0 auto;
   overflow-y: scroll;
@@ -159,8 +100,8 @@
 .projectBg .closeBtn {
   position: fixed;
   right: 150px;
-  top: 150px;
-
+  top: 100px;
+  cursor: pointer;
 }
 
 .Popup {
@@ -186,37 +127,3 @@
   background: #22222277;
 }
 
-
-@media (max-width:1200px) {
-
-  .tabList-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-
-  .contents-wrap {
-    width: 100%;
-  }
-
-  .project-wrap {
-    flex-direction: column-reverse;
-  }
-
-  .projectTitle {
-    top: 30px;
-    left: 50px;
-  }
-
-  .more {
-    width: 120px;
-    font-size: 13px;
-  }
-
-  .seoulTakju .bori {
-    left: 85px;
-    width: 140px;
-  }
-
-}

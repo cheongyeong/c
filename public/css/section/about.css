@@ -21,6 +21,7 @@ section.profile-section {
   display: flex;
   justify-content: space-evenly;
   transform: translateX(-1000px);
+  transition: all 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -200,22 +201,65 @@ section.profile-section {
 
 }
 
+.br-none {
+  display: none;
+}
+
 
 @media (max-width:1200px) {
+
   .aboutMe {
     width: 100%;
+    flex-direction: column;
   }
 
   .imageWrap {
+    width: 80%;
+    height: 280px;
+  }
+
+  .aboutMe p {
+    font-size: 14px;
+  }
+
+  .about {
     width: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .photo>img {
-    height: 400px;
+  .edu {
+    width: 60%;
+    margin-top: 0px;
+  }
+
+  .skils {
+    width: 100%;
+    margin-top: 50px;
+
+  }
+
+  .skil {
+    width: 100%;
+
+  }
+
+  .buttonWrap {
+    width: 100%;
+    justify-content: end;
+    margin-top: 20px;
   }
 
 
 
+}
+
+@media (max-width:1000px) {
+  .photo img {
+    width: 160%;
+  }
+
+  .br-none {
+    display: block;
+  }
 }

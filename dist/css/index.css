@@ -1,5 +1,5 @@
 @import url(../css/section/intro.css);
-@import url(../css/section/about.css);
+@import url(../css/section/aboutme.css);
 @import url(../css/section/project.css);
 @import url(../css/section/webClawling.css);
 @import url(../css/section/contact.css);
@@ -12,13 +12,11 @@
 
 .index-page {
   width: 100%;
-  border: 80px solid #2C45DF;
   border-top: none;
   box-sizing: border-box;
   border-bottom: none;
   color: #222;
-  margin-top: 80px;
-  transition: all 0.3s;
+  background-color: #F5F5F5;
 }
 
 
@@ -50,12 +48,12 @@ section {
   padding: 200px 0;
   box-sizing: border-box;
   margin: 0 auto;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
 }
+
 
 section.contactMe-section {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
 .blue {
@@ -86,7 +84,7 @@ section.contactMe-section {
   top: -200px;
 }
 
-.topBtn{
+.topBtn {
   width: 100px;
   height: 100px;
   background-color: #222;
@@ -98,8 +96,13 @@ section.contactMe-section {
   right: 40px;
   bottom: 40px;
   z-index: 100;
+  transition: all 0.5s;
+  opacity: 0;
 }
 
+.topBtn.show {
+  opacity: 1;
+}
 
 
 
