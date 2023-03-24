@@ -34,19 +34,21 @@
 
 .projectPhoto{
   width: 68%;
+  padding-top: 40%;
+  background-position: center center;
 }
 
 .anthra .projectPhoto{
   background: url(../../img/pro1.jpg);
-  padding-top: 40%;
+  background-size: cover;
+
 }
 .seoulTakju .projectPhoto{
   background: url(../../img/pro2.jpg);
-  padding-top: 40%;
+
 }
 .seomun .projectPhoto{
   background: url(../../img/pro3.jpg);
-  padding-top: 40%;
 }
 
 
