@@ -3,6 +3,9 @@
 
     <section class="clawling-section" id="webclone">
       <h1 class="bold">WEB CLONE</h1>
+      <h5>사이트의 구조와 반응형 웹에 대한 이해를 높일 수 있었던 클론 코딩 프로젝트로
+        <br>  HTML, CSS와 JavaScript의 기초 지식을 쌓을 수 있었습니다.
+      </h5>
       <div class="slideWrap">
         <swiper
          :options="swiperOption"
