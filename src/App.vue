@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/index.css" >
   <link rel="stylesheet" href="css/header.css" >
 
-  <header>
+    <header>
       <nav>
        <h1 class="logo"></h1>
         <ul class="menu">
@@ -27,12 +27,8 @@
    <project />
    <webClawling />
    <contact />
+  </main>
   
-
-</main>
-
-
-<span></span>
 
   
 
