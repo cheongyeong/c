@@ -51,7 +51,7 @@
         </P>
          <div class="projectBtn">
            <div class="more" @click="lms = true">Veiw</div>
-           <div class="more"><a target="_blank" href="https://github.com/cheongyeong/Anthracite-Coffee.">Git Hub</a></div>
+           <div class="more"><a target="_blank" href="https://github.com/cheongyeong/TheFuture_newdeal4lms.git">Git Hub</a></div>
          </div>
         </div>
     </div>
