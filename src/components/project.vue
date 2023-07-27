@@ -3,7 +3,7 @@
 <div class="projectBg" v-if="lms == true">
      <img class="closeBtn" src="img/close-white.png" alt="" @click="lms = false">
      <div  class="Popup">
-       <img src="img/lms.png" alt="">
+       <img src="img/LMS.png" alt="">
      </div>
 </div>
 <div class="projectBg" v-if="anthra == true">
